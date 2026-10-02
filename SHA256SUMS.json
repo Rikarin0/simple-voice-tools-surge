@@ -1,0 +1,72 @@
+{
+  "origin": "https://voice.tool",
+  "resources": {
+    "/assets/index-did7DkdM.js": {
+      "size": 774859,
+      "sha256": "6c3fd886f0e94f02a2cb61e4b3d730261335bd97e76bb2c68841986fa9009a62",
+      "type": "application/javascript; charset=utf-8"
+    },
+    "/assets/index-o6JzvgWL.css": {
+      "size": 92120,
+      "sha256": "48394c23af054910f43e357ef133f2c3df02c306c160229a8857d37a042c4d19",
+      "type": "text/css; charset=utf-8"
+    },
+    "/favicon.svg": {
+      "size": 626,
+      "sha256": "98eb737d41ad3b8e67cef60d552446591b9c4ae0adb79171157df033659803d2",
+      "type": "image/svg+xml"
+    },
+    "/icon-192.png": {
+      "size": 3934,
+      "sha256": "58e296882136d40e258a96895299ca25c25ccf2f9f6130824dca39a18b4b37f8",
+      "type": "image/png"
+    },
+    "/icon-512.png": {
+      "size": 10558,
+      "sha256": "c1095d7421f21246fee2202fdc2c6b95fc79974fd7e7970b3f0fbb9645dac645",
+      "type": "image/png"
+    },
+    "/index.html": {
+      "size": 2165,
+      "sha256": "1ffd6f7d45ecb23e6c9a1c425f9b6c3b68ad6b653ec32d8530d5c6154c0b966a",
+      "type": "text/html; charset=utf-8"
+    },
+    "/manifest.webmanifest": {
+      "size": 545,
+      "sha256": "8e5773cca2254a890532d27c2a88d8c70405d8d6ac185a161a3ce5f2ae56c6e5",
+      "type": "application/manifest+json; charset=utf-8"
+    },
+    "/maskable-512.png": {
+      "size": 8786,
+      "sha256": "a8e2c0e2a7d2649703df4526e77222203897c2d1ad1f98669a07e3d9f21b4686",
+      "type": "image/png"
+    },
+    "/og-image.png": {
+      "size": 6523,
+      "sha256": "f2fdb5d1d129eea28345dfe4db18a0428973a5f60e7c60ab6524dc8bc3f8a5ac",
+      "type": "image/png"
+    },
+    "/registerSW.js": {
+      "size": 136,
+      "sha256": "e12c8db54e3cc247034427f2b661b305a78fea7e7cdec1eac179fecec3da0fc7",
+      "type": "application/javascript; charset=utf-8"
+    },
+    "/sw.js": {
+      "size": 1750,
+      "sha256": "96dbb5b573c04473f3c643003758078c3a6f64319ae53cf194c7f125741abaa1",
+      "type": "application/javascript; charset=utf-8"
+    },
+    "/workbox-9c191d2f.js": {
+      "size": 15112,
+      "sha256": "04b086f1b2f4215ee4b659a7bc9c76162894abdb43fa876247bc7c0bd6fd1c37",
+      "type": "application/javascript; charset=utf-8"
+    }
+  },
+  "files": {
+    "README.md": "79c9c528a6581309a6256f34d7c6f9deb6e008dec6a9b47fb8f5577adca97675",
+    "Simple-Voice-Tool-Surge.zip": "5e673ff63c4f08aaee63fb343445845c21c300f8fb2039738c3f69b425cb9373",
+    "Simple-Voice-Tool.js": "486c09c9d3db83493c02c3b712935cd18f4f54cba010951a39a66f3e3b80f8d7",
+    "Simple-Voice-Tool.sgmodule": "8573b2c9903d259eb8743af40b842147375af12bf08fa9fe596ee123731e3c7a",
+    "THIRD_PARTY_LICENSES.txt": "05887675debf40d8018e1a60db3c99ed29b0dd635f6a7015071a9976bc2f748b"
+  }
+}
