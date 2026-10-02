@@ -1,13 +1,13 @@
 # Simple Voice Tool for Surge
 
-本仓库提供已构建的 Surge 脚本、模块和完整安装包，入口为 **https://voice.tool/**。下载 [完整安装包](Simple-Voice-Tool-Surge.zip) 后按以下步骤安装。
+本仓库提供已构建的 Surge 脚本、模块和完整安装包，入口为 **https://voice.tool/**。可直接导入 [远程模块](https://raw.githubusercontent.com/Rikarin0/simple-voice-tools-surge/main/Simple-Voice-Tool.sgmodule)，或下载 [完整安装包](Simple-Voice-Tool-Surge.zip) 后按以下步骤安装。
 
 此版本由 Surge 的 `http-request` 脚本在本机提供完整网页，用 Safari / Chrome 运行录音、分析、历史记录和设置。网页功能与站点版使用同一份构建产物，麦克风由浏览器授权。无需 Node.js、服务器或 CDN；可选 GitHub 云备份仍需联网。
 
 ## 安装
 
-1. 解压 `Simple-Voice-Tool-Surge.zip`。把 `Simple-Voice-Tool.js` 和 `Simple-Voice-Tool.sgmodule` 放入 **当前 Surge 配置文件所在目录**。脚本的相对路径以配置文件目录为准，不是模块下载目录。也可在 Surge 脚本编辑器导入 `.js`，再将模块的 `script-path` 改为其实际路径。
-2. 在 Surge 的模块列表中启用 `Simple Voice Tool` 本地模块。使用托管配置时，可导入模块；务必确认该模块指向已导入的脚本文件。
+1. 在 Surge 的模块列表中导入上述远程模块，或解压 `Simple-Voice-Tool-Surge.zip` 后导入其中的 `Simple-Voice-Tool.sgmodule`。模块的 `script-path` 已指向本仓库的 GitHub Raw 脚本地址；首次下载及更新脚本时需要联网。
+2. 启用 `Simple Voice Tool` 模块，确认 Surge 已成功下载远程脚本。若要使用本地脚本，将安装包中的 `Simple-Voice-Tool.js` 放入 **当前 Surge 配置文件所在目录**，再把模块的 `script-path` 改为 `Simple-Voice-Tool.js`。
 3. 在 Surge 中启用脚本、MITM（HTTPS 解密），生成并安装本机 CA 证书。iOS 还需在“设置 → 通用 → 关于本机 → 证书信任设置”中开启该证书的完全信任；macOS 在钥匙串中信任该证书。模块仅追加 `voice.tool`，证书由你自己的 Surge 配置管理。
 4. 启动 Surge。iOS 启用 Surge VPN；macOS 使用 Surge 系统代理或增强模式，使浏览器请求经过 Surge。用 **Safari / Chrome** 打开 **https://voice.tool/**，允许麦克风访问。不要在 Surge 脚本编辑器中运行录音页面。
 
@@ -19,7 +19,7 @@
 - 换设备、浏览器、浏览器配置文件或域名时，在旧页面“设置 → 完整备份”导出 ZIP，再在新页面导入。模块和安装包均不包含个人录音、历史数据、令牌或证书。
 - 音高/共振峰/能量分析、三种测试模式、回放、历史/趋势/对比、图表、主题与四种语言、CSV/JSON/PNG 导出、ZIP 备份恢复、实验性功能以及 PWA 保留。File System Access 等原有可选能力继续受浏览器支持情况影响。
 - 完整页面、Service Worker、manifest 和图标已打包。首次加载时保持 Surge 运行；浏览器完成 PWA 缓存后可使用原有离线功能。iOS 可通过 Safari 分享菜单“添加到主屏幕”。
-- 更新时同时替换 `.js` 与 `.sgmodule`，并在 Surge 中重新加载脚本/配置。再刷新页面以更新 PWA；若已有缓存暂时显示旧版本，关闭所有应用窗口后重新打开。**不要清除网站数据来更新**，以免删除本地记录。
+- 更新时在 Surge 中更新远程模块和脚本，再重新加载配置。使用本地脚本时同时替换 `.js` 与 `.sgmodule`。再刷新页面以更新 PWA；若已有缓存暂时显示旧版本，关闭所有应用窗口后重新打开。**不要清除网站数据来更新**，以免删除本地记录。
 
 ## 安装包内容
 

@@ -2,7 +2,7 @@
 #!desc=本地提供完整语音工具网页；用 Safari/Chrome 打开 https://voice.tool/；须启用 MITM 并信任证书
 
 [Script]
-simple-voice-tool = type=http-request,pattern=^https?://voice\.tool(?::(?:80|443))?(?:/|$),script-path=Simple-Voice-Tool.js,requires-body=false,binary-body-mode=true,timeout=30
+simple-voice-tool = type=http-request,pattern=^https?://voice\.tool(?::(?:80|443))?(?:/|$),script-path=https://raw.githubusercontent.com/Rikarin0/simple-voice-tools-surge/main/Simple-Voice-Tool.js,requires-body=false,binary-body-mode=true,timeout=30
 
 [MITM]
 hostname = %APPEND% voice.tool
